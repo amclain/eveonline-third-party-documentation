@@ -29,11 +29,11 @@ Returns a list of all invited attendees for a given event.
 
 ```xml
 <result>
-    <rowset name="eventAttendees" key="characterID" columns="characterID,characterName,response">
-        <row characterID="123456789" characterName="Jane Doe" response="Accepted" />
-        <row characterID="987654321" characterName="John Doe" response="Tentative" />
-        <row characterID="192837645" characterName="Another Doe" response="Declined" />
-        <row characterID="918273465" characterName="Doe the Third" response="Undecided" />
+    <rowset name="eventAttendees" key="characterID" columns="eventID,characterID,characterName,response">
+        <row eventID="1451448" characterID="123456789" characterName="Jane Doe" response="Accepted" />
+        <row eventID="1451449" characterID="987654321" characterName="John Doe" response="Tentative" />
+        <row eventID="1451450" characterID="192837645" characterName="Another Doe" response="Declined" />
+        <row eventID="1451451" characterID="918273465" characterName="Doe the Third" response="Undecided" />
     </rowset>
 </result>
 ```
@@ -46,6 +46,11 @@ Returns a list of all invited attendees for a given event.
             <th>Name</th>
             <th>Data type</th>
             <th>Description</th>
+        </tr>
+        <tr>
+            <td>eventID</td>
+            <td>long</td>
+            <td>ID of the event.</td>
         </tr>
         <tr>
             <td>characterID</td>
