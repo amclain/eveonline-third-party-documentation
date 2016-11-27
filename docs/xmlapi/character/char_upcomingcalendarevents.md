@@ -22,10 +22,10 @@ Retrieve character upcoming calendar events.
 
 ```xml
 <result>
-    <rowset name="upcomingEvents" key="eventID" columns="eventID,ownerID,ownerName,eventDate,eventTitle,duration,importance,response,eventText">
+    <rowset name="upcomingEvents" key="eventID" columns="eventID,ownerID,ownerName,eventDate,eventTitle,duration,importance,response,eventText,ownerTypeID">
         <row eventID="93264" ownerID="1" ownerName="" eventDate="2011-03-26 09:00:00" eventTitle="EVE Online Fanfest 2011" 
 duration="0" importance="0" response="Undecided" eventText="Join us for &lt;a href=&quot;http://fanfest.eveonline.com/&quot;&gt;
-EVE Online's Fanfest 2011&lt;/a&gt;!" />
+EVE Online's Fanfest 2011&lt;/a&gt;!" ownerTypeID="0" />
     </rowset>
 </result>
 ```
@@ -93,6 +93,12 @@ EVE Online's Fanfest 2011&lt;/a&gt;!" />
             <td>eventText</td>
             <td><strong>string</strong></td>
             <td>Event description.</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td>ownerTypeID</td>
+            <td><strong>long</strong></td>
+            <td>Type ID of the event owner.</td>
         </tr>
     </tbody>
 </table>
